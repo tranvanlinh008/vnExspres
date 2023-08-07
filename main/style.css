@@ -1,0 +1,32 @@
+* {
+    font-family: Arial;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.text-new {
+font-family: 'Merriweather', serif;
+font-size: 15px;
+}
+.hover-fill:hover path {
+ fill: white; 
+}
+#chuong:focus + #chuong-1 {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+
+}
+@keyframes bottom-up {
+    0% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  .group:hover .group-hover\:animate-bottom-up {
+    animation: bottom-up 0.2s ease-in-out;
+  }
+
+ 

@@ -4,8 +4,1071 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="test.js">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+    screens: {
+      'tablet': '790px',
+      // => @media (min-width: 640px) { ... }
+
+      'laptop': '994px',
+      // => @media (min-width: 1024px) { ... }
+
+      'desktop': '1100px',
+      // => @media (min-width: 1280px) { ... }
+    },
+  }
+        }
+      </script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Merriweather&display=swap" rel="stylesheet">
+
 </head>
 <body>
+    <div>
+        <!-- header -->
+        <div>
+            <!-- header1 -->
+            <div >
+                <div class="container mx-auto flex  flex justify-between items-center  py-[10px]   ">
+                    <div class="flex gap-[15px] items-center">
+                        <span class="border-r border-black">
+                            <a href="#" title="a"><img class="pr-5" src="https://s1.vnecdn.net/vnexpress/restruct/i/v797/v2_2019/pc/graphics/logo.svg" alt=""></a>
+                        </span>
+                        <span class="border-r border-black">
+                            <p class="pr-4">Chủ nhật, 30/7/2023</p>
+                        </span>
+                        <div class="flex gap-2">
+                            <div class="group flex  relative cursor-pointer">
+                               <div class="flex gap-1 ">
+                                    <p>Hà Nội </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 32 32"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M30 12L16 24L2 12"/></svg>
+                                    <div class=" border shadow-md absolute w-[350px] top-[20px] z-50 bg-white py-[15px] px-[20px] rounded hidden group-hover:block">
+                                        <div>
+                                            <div class="flex items-center border-b justify-between pb-5 ">
+                                                <div >
+                                                    <a class="flex items-center" href="#">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 19q-3.525-2.6-5.262-5.05T5 9.15q0-1.775.638-3.113T7.274 3.8q1-.9 2.25-1.35T12 2q1.225 0 2.475.45t2.25 1.35q1 .9 1.638 2.238T19 9.15q0 2.35-1.738 4.8T12 19Zm0-8q.825 0 1.413-.588T14 9q0-.825-.588-1.413T12 7q-.825 0-1.413.588T10 9q0 .825.588 1.413T12 11ZM5 22v-2h14v2H5Z"/></svg>
+                                                    <p class="text-base">Tự động sác định vị trí</p>
+                                                    </a>
+                                                </div>
+                                                <div>
+                                                    <input type="checkbox" id="myCheckbox" />
+                                                    <label for="myCheckbox">On/Off</label>
+                                                </div>
+                                            </div>
+                                            <div class="border border-gray-400 flex rounded-xl mt-3 items-center p-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="M9.5 16q-2.725 0-4.612-1.888T3 9.5q0-2.725 1.888-4.612T9.5 3q2.725 0 4.612 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7q-.275.275-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16Zm0-2q1.875 0 3.188-1.313T14 9.5q0-1.875-1.313-3.188T9.5 5Q7.625 5 6.312 6.313T5 9.5q0 1.875 1.313 3.188T9.5 14Z"/></svg>
+                
+                                                <input class="w-[80%]  outline-none  " type="text" placeholder="Tìm địa chỉ">
+                                            </div>
+                                            <div class="mt-2 ">
+                                                <ul class="overflow-auto h-[200px]">
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    <li class="mt-1  group flex items-center justify-between p-2 hover:bg-gray-200 rounded-xl  hover:cursor-pointer">
+                                                        <a class="py-1" href="#">Hà Nội
+    
+                                                        </a>
+                                                        <div class=" hidden group-hover:block ">
+                                                        <div class="flex items-center gap-1">
+                                                                <a class="hover:cursor-pointer bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white gap-1" href="#">
+                                                                    <input type="radio" name="" title="12" id="">
+                                                                    Chọn mặc định
+                                                                </a>
+                                                                
+                                                                <button class="">
+                                                                        <span class="bg-white rounded-lg p-1 hover:bg-gray-400 flex items-center hover-fill hover:text-white">
+                                                                            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M2.984 8.625v.003a.5.5 0 0 1-.612.355c-.431-.114-.355-.611-.355-.611l.018-.062s.026-.084.047-.145a6.7 6.7 0 0 1 1.117-1.982C4.096 5.089 5.605 4 8 4s3.904 1.089 4.802 2.183a6.7 6.7 0 0 1 1.117 1.982a4.077 4.077 0 0 1 .06.187l.003.013v.004l.001.002a.5.5 0 0 1-.966.258l-.001-.004l-.008-.025a4.872 4.872 0 0 0-.2-.52a5.696 5.696 0 0 0-.78-1.263C11.286 5.912 10.044 5 8 5c-2.044 0-3.285.912-4.028 1.817a5.7 5.7 0 0 0-.945 1.674a3.018 3.018 0 0 0-.035.109l-.008.025ZM8 7a2.5 2.5 0 1 0 0 5a2.5 2.5 0 0 0 0-5ZM6.5 9.5a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0Z"/></svg>
+                                                                            Xem 
+                                                                        </span>
+                                                                </button>
+                                                        </div>
+                                                        
+                                                        </div>
+                                                    </li>
+                                                    
+                                                    
+                                                </ul>
+                                                
+                                            </div>
+                                        </div>
+                                </div>
+                               </div>
+                               
+                            </div>
+                            <span class="flex gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 7L6 10.5h3l-2 3"/><path d="M11 8a2.5 2.5 0 1 0-.62-4.92a3.5 3.5 0 0 0-6.76 0A2.5 2.5 0 1 0 3 8h1.5"/></g></svg>
+                                
+                               <span>
+                                30<sup>o</sup>
+                               </span>
+                            </span>
+                            
+                        </div>
+                    </div>
+                    <div class="flex gap-5 items-center text">
+                        <div class="flex gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 1024 1024"><path fill="currentColor" d="M512 896a384 384 0 1 0 0-768a384 384 0 0 0 0 768zm0 64a448 448 0 1 1 0-896a448 448 0 0 1 0 896z"/><path fill="currentColor" d="M480 256a32 32 0 0 1 32 32v256a32 32 0 0 1-64 0V288a32 32 0 0 1 32-32z"/><path fill="currentColor" d="M480 512h256q32 0 32 32t-32 32H480q-32 0-32-32t32-32z"/></svg>
+                            <a href="#">Mới nhất </a>
+                        </div>
+                        <div class="flex group relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 28 28"><path fill="currentColor" d="M14 2.25A9.75 9.75 0 0 1 23.75 12c0 4.12-2.895 8.61-8.61 13.518a1.75 1.75 0 0 1-2.283-.002l-.378-.328C7.017 20.408 4.25 16.028 4.25 12A9.75 9.75 0 0 1 14 2.25Zm0 1.5A8.25 8.25 0 0 0 5.75 12c0 3.502 2.548 7.537 7.714 12.057l.373.323a.25.25 0 0 0 .326 0c5.416-4.652 8.087-8.795 8.087-12.38A8.25 8.25 0 0 0 14 3.75Zm0 4.5a3.75 3.75 0 1 1 0 7.5a3.75 3.75 0 0 1 0-7.5Zm0 1.5a2.25 2.25 0 1 0 0 4.5a2.25 2.25 0 0 0 0-4.5Z"/></svg>
+                            <a href="#">Tin theo khu vực
+                                <div class=" absolute w-[350px] h-[100px] border top-[20px] z-50 bg-white  rounded hidden group-hover:block p-[15px]">
+                                         <a class="text-lg font-semibold leading-[33px] px-[15px] py-[20px] hover:text-red-600" href="#">
+                                            Hà Nội
+
+                                        </a> <br>
+                                        <a class="text-lg font-semibold leading-[33px] px-[15px] py-[20px] hover:text-red-600" href="#">
+                                            TP Hồ Chí Minh
+
+                                        </a>
+                                        
+                                </div>
+                            </a>
+                        </div>
+                        <div class="flex border-r items-center">
+                            <img class="w-[20px] " src="https://play-lh.googleusercontent.com/6eBVmDIQNXsUd06jK9sRRdUEHsp4oiI7jwFFZq4ccFpY3Jc1nAsRMv0pnH__mYYExak" alt="">
+                            <a class="pr-5" href="#">Internationnal</a>
+                        </div>
+                        <div class="flex items-center">
+                            <button title="a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32"><path fill="currentColor" d="m29 27.586l-7.552-7.552a11.018 11.018 0 1 0-1.414 1.414L27.586 29ZM4 13a9 9 0 1 1 9 9a9.01 9.01 0 0 1-9-9Z"/></svg>
+                            </button>
+                            <input class="hidden" id="keywordHeader" type="text" name="q" placeholder="Tìm kiếm" autocomplete="off">
+                        </div>
+                        <div >
+                            <a class="flex items-center gap-5 hover:text-blue-500" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="5.5" r="2.5"/><path d="M2.73 11.9a5 5 0 0 1 8.54 0"/><circle cx="7" cy="7" r="6.5"/></g></svg>
+                            Đăng nhập 
+                            </a>
+                            
+                        </div>
+                        <div  class=" ">
+                            <a href="#" title="a">
+                                <svg id="chuong" class=" relative " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
+                                <div id="chuong-1" class=" hidden opacity-0 absolute top-[25px] right-[-130px] border border-red-500 scale-90 transition-all duration-300">
+                                    <div class=" flex justify-between w-[300px] bg-gray-200 p-5 overflow-auto">
+                                        <div class=" ">
+                                            <button class="flex flex-col items-center btn ">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
+                                                Thông báo
+
+                                            </button>
+                                            <ul class="  border border-red-500">
+
+                                                <li>
+                                                    <button class="bg-blue-600" title="1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
+                                                    Bật nhận thông báo
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <a href="#" title="1">
+                                                        <div class="flex justify-between">
+                                                            <span>Kinh doanh</span>
+                                                            <span>27' trước</span>
+                                                        </div>
+                                                        <div>
+                                                            <h3 class="text-new text-black">Hòa Phát giao những container đầu tiên cho khách hàng</h3>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="flex flex-col items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h8m-8 4h6m4-9a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-5l-5 3v-3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h12z"/></svg>
+                                            Ý kiến
+                                            </button>
+                                            <ul class="hidden">
+                                                <li>
+                                                    <button>
+                                                        Đăng nhập ngay
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <button class="flex flex-col items-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M.5 7A6.5 6.5 0 1 0 7 .5a7.23 7.23 0 0 0-5 2"/><path d="m2.5.5l-.5 2L4 3m3 .5v4L4.4 8.8"/></g></svg>
+                                                Tin đã xem
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex justify-center items-center gap-4  border-b border-t">
+                        <li class="flex items-center gap-2 ">
+                            <a class=" " href="#" title="a">
+                                <svg class="hover:bg-red-700 hover:text-white bg-gray-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-3 -3 30 30"><path class="hover:bg-white" fill="currentColor" d="M20 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9ZM8 15v2h8v-2H8Z"/></svg>
+                            </a>
+                            <div class="group  relative py-4">
+                                    <a class=" text-black  hover:text-red-700 " href="#">Thời sự</a>
+                                <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                    <li class="p-2 "><a class="text-black hover:border-b border-black p-2" href="#">Chính trị</a></li>
+                                </ul>
+                            </div>
+                            </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Góc nhìn</a>
+                            <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            </ul>
+
+                            
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Thế giới</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Video</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Podcarts</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Kinh doanh</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Bất động sản</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Khoa học</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Giải trí</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Thể thao</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Pháp luật</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Giáo dục</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Sức khỏe</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Đời sống</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Du lịch</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Số hóa</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> xe</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Ý kiến</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#"> Tâm sự</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li class="relative group py-4">
+                            <a class="text-black hover:text-red-700"href="#">Thư dãn</a>
+                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                        </ul>
+                        </li>
+                        <li>
+                            <span >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z"/>
+                                </svg>
+                            </span>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+        </div>
+        <div class="container mx-auto ">
+            <!-- top story -->
+            <div class="w-[70%] mt-6">
+                <div class="flex">
+                    <div class="w-2/3">
+                        <a href="#" title="1">
+                            <img src="https://i1-kinhdoanh.vnecdn.net/2023/08/06/thuhoachlua-1691303429-6261-1691303918.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=codHU5rgOo56V8K2k-ivig" alt="">
+                        </a>
+                    </div>
+                    <div class="overflow-auto w-1/3 p-5 bg-gray-100">
+                        <ul>
+                            <li >
+                            
+                                <a class="text-new text-black text-2xl font-medium hover:text-blue-500" href="#">Thủ tướng: Tăng xuất khẩu gạo nhưng phải đảm bảo an ninh lương thực</a>
+                                
+                            </li>
+                            <li class="p-2">
+                                <a href="#" title="a">
+                                    Tận dụng thời cơ giá gạo lên cao để tăng xuất khẩu, nâng thu nhập người dân, nhưng Thủ tướng yêu cầu "đảm bảo an ninh lương thực quốc gia trong mọi tình huống".
+                                </a>
+                            </li>
+                            <li class="flex gap-3">
+                                <span>Thời sự</span>
+                                <span class="cursor-pointer flex items-center gap-1 ">
+                                    <svg class=" hover:opacity-80 opacity-50" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M8 9v2h8V9H8Z"/></svg>
+                                    <p class="text-blue-400 text-sm cursor-pointer">128</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <ul class="flex pt-5 justify-around  ">
+                        <li class="w-1/3 pr-5" ><a href="#">
+                            <h1 class="text-new text-black text-lg font pb-2 hover:text-blue-500">Nguy cơ vỡ đập chứa 1,2 triệu m3 nước ở Đăk Nông</h1>
+                            <div class="inline-block">
+                                <span>Sau nhiều ngày mưa lớn, thân và chân đập thủy lợi Đăk N'Ting, huyện Đăk G'long xuất hiện nhiều vết nứt, sụt lún, nguy cơ vỡ, gần 100 người phải sơ tán.
+                                    <span>
+                                        <svg class=" hover:opacity-80 opacity-50 w-[15px] h-[15px] inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M8 9v2h8V9H8Z"/></svg>
+                                    <span class="text-blue-400 text-sm cursor-pointer">128</span>
+                                    </span>
+                                </span>
+                                
+                            </div>
+                        </a>
+                        </li>
+                        <li class="w-1/3 px-5"><a href="#">
+                            <h1 class="text-new text-black text-lg font pb-2 hover:text-blue-500 flex justify-center gap-1 ">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="currentColor" d="m13.75 10.19l.63.13l4.17 2.08c.7.23 1.16.92 1.1 1.66v.26l-.9 6.12c-.06.43-.25.83-.6 1.11c-.31.3-.72.45-1.15.45h-6.88c-.49 0-.94-.18-1.27-.53L2.86 15.5l.9-1c.24-.25.62-.39.98-.37h.29L9 15V4.5a2 2 0 0 1 2-2a2 2 0 0 1 2 2v5.69h.75Z"/></svg>
+                                Nguy cơ vỡ đập chứa 1,2 triệu m3 nước ở Đăk Nông</h1>
+                            <span>Sau nhiều ngày mưa lớn, thân và chân đập thủy lợi Đăk N'Ting, huyện Đăk G'long xuất hiện nhiều vết nứt, sụt lún, nguy cơ vỡ, gần 100 người phải sơ tán.
+                                <span>
+                                    <svg class=" hover:opacity-80 opacity-50 w-[15px] h-[15px] inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M8 9v2h8V9H8Z"/></svg>
+                                <span class="text-blue-400 text-sm cursor-pointer">128</span>
+                                </span>
+                            </span>
+                        </a>
+                        </li>
+                        <li class="w-1/3 px-5 border-l-2">
+                            <span class="font-semibold text-red-700">Góc nhìn </span>
+                            <a href="#">
+                            <h1 class="text-new text-black text-lg font pb-2 hover:text-blue-500">Hoàn Kiếm về đâu?</h1>
+                            <span>Hoàn Kiếm nhỏ nhưng chứa hồn cốt nghìn năm Thăng Long Kẻ Chợ, không dễ phân tách chỉ bằng đo đất, tính diện tích.
+                            </span>
+                            <div class="flex justify-between relative mt-2 items-center">
+                                <span class="mt-2">
+                                    <p class="italic text-new pb-2">Đặng Hùng Võ</p>
+                                    <svg class=" hover:opacity-80 opacity-50 w-[15px] h-[15px] inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M8 9v2h8V9H8Z"/></svg>
+                                <span class="text-blue-400 text-sm cursor-pointer">128</span>
+                                </span>
+                                <div class="w-[72px] rounded-full bg-gray-100 overflow-hidden absolute  right-0 top-[-20px]">
+                                    <img  src="https://i1-vnexpress.vnecdn.net/2018/06/17/danghungvopng-1529241770.png?w=100&h=100&q=100&dpr=1&fit=crop&s=z9nApQMY4NcHnXxE7sxykw" alt="">
+                                </div>
+                            </div>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- content -->
+            <div class="flex border-t mt-5 ">
+                <!-- content left -->
+                <div class="w-[400px] pt-7">
+                    <ul class="border-r pr-5">
+                        <li class="pb-4   border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Bản làng tan hoang sau lũ quét 
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <div class="relative">
+                                        <img class="h-[87px] w-[500px] " src="https://i1-vnexpress.vnecdn.net/2023/08/07/365624375-1450000372468432-1422161580931329264-n-1691384878-1691390455.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=HN8wF_exRpJy74ULyaGNWQ" alt="">
+                                    <svg class="absolute top-[60px] bg-black-400 left-[10px] z-50 bg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256"><path fill="white" d="M208 56h-27.72l-13.63-20.44A8 8 0 0 0 160 32H96a8 8 0 0 0-6.65 3.56L75.71 56H48a24 24 0 0 0-24 24v112a24 24 0 0 0 24 24h160a24 24 0 0 0 24-24V80a24 24 0 0 0-24-24Zm8 136a8 8 0 0 1-8 8H48a8 8 0 0 1-8-8V80a8 8 0 0 1 8-8h32a8 8 0 0 0 6.66-3.56L100.28 48h55.43l13.63 20.44A8 8 0 0 0 176 72h32a8 8 0 0 1 8 8ZM128 88a44 44 0 1 0 44 44a44.05 44.05 0 0 0-44-44Zm0 72a28 28 0 1 1 28-28a28 28 0 0 1-28 28Z"/></svg>
+                                    </div>
+                                    <p>
+                                        YÊN BÁI-Hàng chục ngôi nhà ở xã Hồ Bốn, huyện Mù Cang Chải bị lũ quét cuốn sập, đường sá ngập đất đá, quốc lộ 32 chia cắt.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/Starokostiantyniv1JPG-16913825-8104-9497-1691382588.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=g4VS2mTJUHJER4rx7U9PWw" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/cats-1691404904-7620-1691404982.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=QFMMX6TCmAGlAsRNP1BtWQ" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/igiacAn-1691401858-8409-1691404530.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=3pml7W22BqSe5u2OcSo_RA" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/AnhchupManhinh20230807luc15314-8065-6417-1691397332.png?w=220&h=132&q=100&dpr=1&fit=crop&s=sJA6dzy0DO1edRfq0ocIJw" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/mua-lu-trinh-chau-2-reuters-21-1796-7073-1691383109.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=Q4xGVvlXNGbAMzbMKhRV5Q" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-thethao.vnecdn.net/2023/08/07/messi-1691395724-1691395733-6006-1691396000.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=lA43Tr6tkYYWdJoL1_t17Q" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v799/v2_2019/pc/graphics/Nga-Ukraine-Pc.jpg" alt="">
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/z4581662691096-718e497e9880b3e-2341-7508-1691379721.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=GAWRcS9kNVhfHGC9iai8bA" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-kinhdoanh.vnecdn.net/2023/08/07/madeinvn-1691394353-1691394364-4284-1691394609.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=7HXMkbjK2dLeIyBGF_1NHQ" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-thethao.vnecdn.net/2023/08/07/messi-jpeg-1691401469-16914014-8424-6558-1691401902.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=YrJHsmEBPVgMr7zczxeQZQ" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-kinhdoanh.vnecdn.net/2023/08/02/361659470181645904740348262807-8223-6673-1690985494.png?w=220&h=132&q=100&dpr=1&fit=crop&s=BO5SK70gjtU8Ug-UAwZLwA" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/4f834d1e1bb8c8e691a9-jpeg-1691-8214-8797-1691401843.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=9OFmRxe_y9bpFsXfattkIg" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-sohoa.vnecdn.net/2023/08/07/iphone-15-pro-blue-front-persp-5225-2475-1691345047.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=DE2-2n71hiZ8jyhTHdqnjA" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-suckhoe.vnecdn.net/2023/08/07/thay-ma-u-jpeg-1691394733-3353-1691394834.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=P3UYO42OqwCfX8RxmZ0PmA" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="pb-4  pt-4 border-b">
+                            <a href="#" title="a">
+                                <span class="text-new text-lg text-black hover:text-blue-500">
+                                    Lý do Nga dồn lực tập kích sân bay trọng yếu của Ukraine
+                                </span>
+                                <div class="flex gap-3 mt-2">
+                                    <img class="h-[87px] w-[145px]" src="https://i1-vnexpress.vnecdn.net/2023/08/07/ChonlananSrikaew-1691406953-8223-1691407007.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=fHrP94rVyTxruW3J0DLX8A" alt="">
+                                    <p>
+                                        Nga triển khai nhiều đợt không kích dữ dội nhằm vào sân bay Starokostiantyniv ở tỉnh Khmelnitsky, nhằm triệt hạ mối đe dọa từ tên lửa Storm Shadow của Ukraine.
+                                    </p>
+                                </div>
+                            </a>
+                        </li>
+                       
+                       
+                    </ul>
+                </div>
+                <!-- content right -->
+                <div class="pt-7 ml-5 w-[700px]">
+                    <!-- kinh doanh  -->
+                    <div class="border-b pb-5">
+                        
+                        <div>
+                            <ul class="flex items-center gap-5">
+                                <li>
+                                    <a class="text-new text-black text-2xl font-semibold border-b border-red-700 hover:text-blue-500" href="#" title="a">
+                                        Kinh doanh
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-500" href="#" title="a">
+                                        Quốc tế
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-500" href="#" title="a">
+                                        Doanh nghiêp
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-500" href="#" title="a">
+                                        Chứng khoán
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-500" href="#" title="a">
+                                        Vĩ mô
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="hover:text-blue-500" href="#" title="a">
+                                        Hậu trường kinh doanh
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flex mt-5 gap-5">
+                            <div class="flex w-2/3 gap-5 cursor-pointer" >
+                                <div class="w-1/2"> 
+                                    <img  src="https://i1-kinhdoanh.vnecdn.net/2023/08/05/hanoi-10-1690819668-8726-16908-7161-5189-1691221751.jpg?w=380&h=228&q=100&dpr=1&fit=crop&s=RBWgfz2RU6MfZl2Bp1xJgQ" alt="">
+                                </div>
+                                <div class="w-1/2 ">
+                                    <h1 class="text-new text-black font-medium hover:text-blue-500">
+                                        Dầu Nga bán sang Ấn Độ rẻ nhất kể từ đầu chiến sự
+                                    </h1>
+                                    <span>
+                                        Giá dầu Nga cập cảng Ấn Độ trong tháng 6 đã về mức thấp nhất kể từ khi chiến sự tại Ukraine diễn ra đầu năm ngoái.
+                                    </span>
+
+                                </div>
+                            </div>
+                            <div class="w-1/3 cursor-pointer border-l pl-5">
+                                <h1 class="text-new text-black font-medium hover:text-blue-500">
+                                    Mưa diện rộng, nhiều thủy điện phải xả lũ
+                                </h1>
+                                <span>
+                                    Mưa lũ diện rộng trên cả ba miền, lượng nước về các hồ tăng cao buộc một số hồ thủy điện như Lai Châu, Huội Quảng, Trung Sơn, Khe ...
+                                    <span>
+                                        <svg class=" hover:opacity-80 opacity-50 w-[15px] h-[15px] inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-2h16M8 9v2h8V9H8Z"/></svg>
+                                    <span class="text-blue-400 text-sm cursor-pointer">128</span>
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" border-b">
+                        <ul class="flex ">
+                            <li class="p-5">
+                                <a class="relative" href="#" title="a">
+                                    
+                                    <span class="text-new text-black font-medium hover:text-blue-500 ">
+                                        Tổ chức concert - ngành kinh tế tiềm năng cho Việt Nam
+                                        <span>
+                                            <svg class=" hover:opacity-80 opacity-50 w-[15px] h-[15px] inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 2a2 2 0 0 1 2 2v12c0 1.11-.89 2-2 2H6l-4 4V4a2 2 0 0 1 2-span16M8 9v2h8V9H8Z"/></svg>
+                                        <span class="text-blue-400 text-sm cursor-pointer">128</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="p-5">
+                                <a class="relative" href="#" title="a">
+                                    <h1 class="text-new text-black font-medium hover:text-blue-500 ">
+                                        Tổ chức concert - ngành kinh tế tiềm năng cho Việt Nam
+                                    </h1>
+                                </a>
+                            </li>
+                            <li class="p-5">
+                                <a class="relative" href="#" title="a">
+                                    <h1 class="text-new text-black font-medium hover:text-blue-500 ">
+                                        Tổ chức concert - ngành kinh tế tiềm năng cho Việt Nam
+                                    </h1>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- tỉ giá -->
+                    <div>
+                        <table>
+                            <tbody class="border">
+                                <tr class="w-[50%]">
+                                    <td class="flex">TỶ GIÁ NGOẠI TỆ
+                                        <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v799/v2_2019/pc/graphics/eximbank.svg" alt="">
+                                    </td>
+                                    <td>Mua TM</td>
+                                    <td> Mua CK</td>
+                                    <td>Bán</td>
+                                </tr>
+                                <tr>
+                                    <td>USD/VND</td>
+                                    <td>23.500</td>
+                                    <td>23.50</td>
+                                    <td>23.88</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR/VND</td>
+                                    <td>25.682</td>
+                                    <td>25.7</td>
+                                    <td>26.6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+        <div></div>
+        <!-- footer -->
+        <div></div>
+
+
+
+
+    </div>
+
+
     
 </body>
 </html>
