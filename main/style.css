@@ -28,5 +28,13 @@ font-size: 15px;
   .group:hover .group-hover\:animate-bottom-up {
     animation: bottom-up 0.2s ease-in-out;
   }
-
- 
+ .before::before {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  content: "";
+  background: #ababab;
+  position: absolute;
+  top: 8px;
+  left: -15px;
+}
