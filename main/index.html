@@ -415,8 +415,8 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <ul class="flex justify-center items-center gap-4  border-b border-t">
+                <div class="sticky top-0">
+                    <ul class="flex justify-center items-center gap-4  border-b border-t "> 
                         <li class="flex items-center gap-2 ">
                             <a class=" " href="#" title="a">
                                 <svg class="hover:bg-red-700 hover:text-white bg-gray-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-3 -3 30 30"><path class="hover:bg-white" fill="currentColor" d="M20 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9ZM8 15v2h8v-2H8Z"/></svg>
@@ -625,9 +625,9 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li>
+                        <li class="cursor-pointer"> 
                             <span >
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z"/>
+                                <svg class=" fill-gray-500 hover:fill-red-700" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="" d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z"/>
                                 </svg>
                             </span>
                         </li>
@@ -3220,7 +3220,7 @@
         
         <!-- footer -->
         <div class="container mx-auto">
-            <div class="border-t border-t-4 flex   pt-5 mt-10 p-4 ">
+            <div class="border-t border-t-4 flex   pt-5 mt-10 p-4  border-b pb-5 mb-3">
                 <ul class="w-[170px] mr-5">
                     <li class="mb-2" > <a class="hover:border-b border-black text-lg text-black font-bold " href="#">
                         Trang chủ
@@ -3328,19 +3328,125 @@
                 <div class="w-[250px]">
                     <div>
                         <p>Tải ứng dụng</p>
-                        <span></span>
-                        <span></span>
+                        <div class="flex gap-3 pt-1 cursor-pointer">
+                            <span class="flex border  rounded bg-gray-100 px-3 py-1 hover:bg-gray-200">
+                                <img class="w-[20px] h-[20px]" src="https://play-lh.googleusercontent.com/6eBVmDIQNXsUd06jK9sRRdUEHsp4oiI7jwFFZq4ccFpY3Jc1nAsRMv0pnH__mYYExak" alt="">
+                                VnExpress
+                            </span>
+                            <span class="flex border  rounded bg-gray-100 px-3 py-1 hover:bg-gray-200">
+                                <img class="w-[20px] h-[20px]" src="https://play-lh.googleusercontent.com/6eBVmDIQNXsUd06jK9sRRdUEHsp4oiI7jwFFZq4ccFpY3Jc1nAsRMv0pnH__mYYExak" alt="">
+                                Internationnal
+                            </span>
+                        </div>
                     </div>
-                    <div></div>
-                    <div></div>
+                    <div class="pt-2 border-b pb-5 ">
+                        <p>Liên hệ</p>
+                        <div class="flex flex-wrap">   
+                            <span class="p-1"><a class="flex gap-1" href="#" title="a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="currentColor" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7.175q.125 0 .263-.038t.262-.112L19.6 8.25q.2-.125.3-.313t.1-.412q0-.5-.425-.75T18.7 6.8L12 11L5.3 6.8q-.45-.275-.875-.012T4 7.525q0 .25.1.438t.3.287l7.075 4.425q.125.075.263.113t.262.037Z"/></svg>
+                                <h1 class="hover:text-blue-500">
+                                    Tòa soạn
+                                </h1>
+                            </a></span>
+                            <span class="p-1 pl-10"><a class="flex gap-1" href="#" title="a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#4fd1d9"/><path fill="#fff" d="M42.3 22.6H26.9v6.2H41v5H26.9v7.5H43v5.2H21v-29h21.3v5.1z"/></svg>
+                                <h1 class="hover:text-blue-500">
+                                    Quảng cáo
+                                </h1>
+                            </a></span>
+                            <span class="p-1"><a class="flex gap-1" href="#" title="a">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 36 36"><path fill="#3B88C3" d="M36 32a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v28z"/><path fill="#FFF" d="M8.917 10.117A2.903 2.903 0 0 1 8.7 8.97c0-1.302 1.147-2.232 2.387-2.232c1.055 0 1.706.682 2.108 1.519l4.806 12.898l4.807-12.898c.402-.837 1.053-1.519 2.107-1.519c1.24 0 2.387.93 2.387 2.232c0 .434-.06.744-.217 1.147l-6.789 17.271c-.404.992-.931 1.798-2.295 1.798c-1.364 0-1.891-.806-2.295-1.798L8.917 10.117z"/></svg>
+                                <h1 class="hover:text-blue-500">
+                                    Hợp tác bản quyền
+                                </h1>
+                            </a></span>
+                        </div>
+                    </div>
+                    <div class="pt-2">
+                        <p>Đường giây nóng</p>
+                        <div class="flex pt-2 justify-between">
+                            <div>
+                                <p class="text-black text-lg font-bold">083.888.0123</p>
+                                <p class="text-sm">(Hà Nội)</p>
+                            </div>
+                            <div>
+                                <p class="text-black text-lg font-bold">082.233.3555</p>
+                                <p class="text-sm">(TP. Hồ Chí Minh)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
+            <div class="flex justify-between pb-3">
+                <div >
+                    <ul class="flex gap-5 items-center">
+                        <li><a href="#" title="a">
+                            Báo điện tử
+                        </a></li>
+                        <li><a href="#" title="a">
+                            <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v799/v2_2019/pc/graphics/logo.svg" alt="">
+                        </a></li>
+                        
+                    </ul>
+                </div>
+                <div >
+                    <ul class="flex gap-3 items-center">
+                        <li class="border-r pr-2"><a href="#" title="a">
+                            Điều khoản sử dụng
+                        </a></li>
+                        <li class="border-r pr-2"><a href="#" title="a">
+                            RSS
+                        </a></li>
+                        <li><a href="#" title="a">
+                            Theo dõi VnExpress trên
+                        </a></li>
+                        <li class="border rounded-full bg-white group hover:bg-blue-500"><a class=" " href="#" title="a">
+                            <svg class="fill-gray-500 m-2 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="" d="M9.198 21.5h4v-8.01h3.604l.396-3.98h-4V7.5a1 1 0 0 1 1-1h3v-4h-3a5 5 0 0 0-5 5v2.01h-2l-.396 3.98h2.396v8.01Z"/></svg>
+                        </a></li>
+                        <li class="border rounded-full bg-white group hover:bg-green-500"><a class=" " href="#" title="a">
+                            <svg class="fill-gray-500 m-2 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="" d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3a97.51 97.51 0 0 0 43.33-53.6a197.74 197.74 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.21 93.21 0 0 0 2.54 22.1a280.7 280.7 0 0 1-203-101.3A95.69 95.69 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.76 100.76 0 0 1-25.94 3.4a94.38 94.38 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.59 199.59 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.68 278.68 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8c0-4.2-.11-8.4-.31-12.5A198.48 198.48 0 0 0 496 109.5Z"/></svg>
+                        </a></li>
+                        <li class="border rounded-full bg-white group hover:bg-red-500 "><a class=" " href="#" title="a">
+                            <svg class="fill-gray-500 m-2 group-hover:fill-white" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 14"><path fill="" d="M8 1.5c-6.88 0-7 .62-7 5.5s.12 5.5 7 5.5s7-.62 7-5.5s-.12-5.5-7-5.5Zm2.24 5.74L7.1 8.74c-.28.13-.5-.02-.5-.33V5.59c0-.31.23-.46.5-.33l3.14 1.5c.28.13.28.35 0 .48Z"/></svg>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex border-t pt-5 justify-between">
+                <ul class="w-1/3"> 
+                    <li>
+                        <p class="text-black  font-bold">Báo tiếng Việt nhiều người xem nhất</p>
+                        <p class="text-black">Thuộc Bộ Khoa học Công nghệ<br>
+                            Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</p>
+                    </li>
+                </ul>
+                <ul class="w-1/3"> 
+                    <li>
+                        <p class="text-black">
+                            Tổng biên tập: Phạm Hiếu <br>
+                            Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch Vọng, Cầu Giấy, Hà Nội <br>
+                            Điện thoại: 024 7300 8899 - máy lẻ 4500
+                        </p>
+                    </li>
+                </ul> 
+                <ul class="w-1/3 pl-10"> 
+                    <li>
+                        <p class="text-black">
+                            © 1997-2023. Toàn bộ bản quyền thuộc VnExpress
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </div>
 
 
-
+        <button
+      id="test"
+      data-display="none"
+      class="fixed bottom-3 right-3 grid  place-items-center border" title="a"
+    > 
+    <svg class="m-2" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 1024 1024"><path fill="currentColor" d="M572.235 205.282v600.365a30.118 30.118 0 1 1-60.235 0V205.282L292.382 438.633a28.913 28.913 0 0 1-42.646 0a33.43 33.43 0 0 1 0-45.236l271.058-288.045a28.913 28.913 0 0 1 42.647 0L834.5 393.397a33.43 33.43 0 0 1 0 45.176a28.913 28.913 0 0 1-42.647 0l-219.618-233.23z"/></svg>
+    </button>
 
     </div>
 
