@@ -14,10 +14,10 @@
       'tablet': '790px',
       // => @media (min-width: 640px) { ... }
 
-      'laptop': '994px',
+      'laptop': '1024px',
       // => @media (min-width: 1024px) { ... }
 
-      'desktop': '1100px',
+      'desktop': '1280px',
       // => @media (min-width: 1280px) { ... }
     },
   }
@@ -30,17 +30,25 @@
 
 </head>
 <body>
-    <div>
+    <div >
         <!-- header -->
-        <div>
-            <!-- header1 -->
-            <div >
-                <div class="container mx-auto flex  flex justify-between items-center  py-[10px]   ">
-                    <div class="flex gap-[15px] items-center">
+        <div >
+                <div class="container mx-auto flex  flex justify-between items-center  py-[10px] laptop:px-5 max-w-[1100px]">
+                    <div class="flex gap-[15px] items-center ">
+                        <div class="hidden desktop:hidden laptop:block">
+                            <ul>
+                                <li class="cursor-pointer"> 
+                                    <span >
+                                        <svg class=" fill-gray-500 hover:fill-red-700" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="" d="M3 4h18v2H3V4Zm0 7h18v2H3v-2Zm0 7h18v2H3v-2Z"/>
+                                        </svg>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                         <span class="border-r border-black">
                             <a href="#" title="a"><img class="pr-5" src="https://s1.vnecdn.net/vnexpress/restruct/i/v797/v2_2019/pc/graphics/logo.svg" alt=""></a>
                         </span>
-                        <span class="border-r border-black">
+                        <span class="border-r border-black ">
                             <p class="pr-4">Chủ nhật, 30/7/2023</p>
                         </span>
                         <div class="flex gap-2">
@@ -361,62 +369,13 @@
                         <div  class=" ">
                             <a href="#" title="a">
                                 <svg id="chuong" class=" relative " xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
-                                <div id="chuong-1" class=" hidden opacity-0 absolute top-[25px] right-[-130px] border border-red-500 scale-90 transition-all duration-300">
-                                    <div class=" flex justify-between w-[300px] bg-gray-200 p-5 overflow-auto">
-                                        <div class=" ">
-                                            <button class="flex flex-col items-center btn ">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
-                                                Thông báo
-
-                                            </button>
-                                            <ul class="  border border-red-500" >
-
-                                                <li>
-                                                    <button class="bg-blue-600" title="1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 256 256"><path fill="currentColor" d="M220.07 176.94C214.41 167.2 206 139.73 206 104a78 78 0 1 0-156 0c0 35.74-8.42 63.2-14.08 72.94A14 14 0 0 0 48 198h42.48a38 38 0 0 0 75 0H208a14 14 0 0 0 12.06-21.06ZM128 218a26 26 0 0 1-25.29-20h50.58A26 26 0 0 1 128 218Zm81.71-33a1.9 1.9 0 0 1-1.7 1H48a1.9 1.9 0 0 1-1.7-1a2 2 0 0 1 0-2c7.57-13 15.7-43.31 15.7-79a66 66 0 1 1 132 0c0 35.68 8.14 65.95 15.71 79a2 2 0 0 1 0 2Z"/></svg>
-                                                    Bật nhận thông báo
-                                                    </button>
-                                                </li>
-                                                <li>
-                                                    <a href="#" title="1">
-                                                        <div class="flex justify-between">
-                                                            <span>Kinh doanh</span>
-                                                            <span>27' trước</span>
-                                                        </div>
-                                                        <div>
-                                                            <h3 class="text-new text-black">Hòa Phát giao những container đầu tiên cho khách hàng</h3>
-                                                        </div>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <button class="flex flex-col items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9h8m-8 4h6m4-9a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-5l-5 3v-3H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h12z"/></svg>
-                                            Ý kiến
-                                            </button>
-                                            <ul class="hidden">
-                                                <li>
-                                                    <button>
-                                                        Đăng nhập ngay
-                                                    </button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <button class="flex flex-col items-center">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 14 14"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M.5 7A6.5 6.5 0 1 0 7 .5a7.23 7.23 0 0 0-5 2"/><path d="m2.5.5l-.5 2L4 3m3 .5v4L4.4 8.8"/></g></svg>
-                                                Tin đã xem
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="sticky top-0">
-                    <ul class="flex justify-center items-center gap-4  border-b border-t "> 
+                <div class="">
+                    <ul class="  flex justify-center items-center gap-4  border-b border-t desktop:gap-3 "> 
                         <li class="flex items-center gap-2 ">
                             <a class=" " href="#" title="a">
                                 <svg class="hover:bg-red-700 hover:text-white bg-gray-200 rounded-full" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="-3 -3 30 30"><path class="hover:bg-white" fill="currentColor" d="M20 20a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9H1l10.327-9.388a1 1 0 0 1 1.346 0L23 11h-3v9ZM8 15v2h8v-2H8Z"/></svg>
@@ -565,17 +524,17 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 ">
                             <a class="text-black hover:text-red-700"href="#"> Du lịch</a>
-                        <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
-                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
-                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
-                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
-                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
-                            <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
-                        </ul>
+                            <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                                <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
+                            </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 desktop:block  hidden ">
                             <a class="text-black hover:text-red-700"href="#"> Số hóa</a>
                         <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
@@ -585,7 +544,7 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 desktop:block hidden">
                             <a class="text-black hover:text-red-700"href="#"> xe</a>
                         <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
@@ -595,7 +554,7 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 desktop:block hidden">
                             <a class="text-black hover:text-red-700"href="#">Ý kiến</a>
                         <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
@@ -605,7 +564,7 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 desktop:block hidden">
                             <a class="text-black hover:text-red-700"href="#"> Tâm sự</a>
                         <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
@@ -615,7 +574,7 @@
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
                         </ul>
                         </li>
-                        <li class="relative group py-4">
+                        <li class="relative group py-4 desktop:block hidden">
                             <a class="text-black hover:text-red-700"href="#">Thư dãn</a>
                         <ul class="cursor-pointer hidden group-hover:animate-bottom-up absolute top-[50px] left-0 shadow-xl w-[200px]  p-2 transition-all duration-200 will-change-auto group-hover:block group-hover:border-t group-hover:border-t-red-500 bg-white">
                             <li class="p-2"><a title="1" class="text-black hover:border-b border-black p-2" href="#">kinh doanh & quản trị</a></li>
@@ -635,10 +594,8 @@
 
 
                 </div>
-
-            </div>
         </div>
-        <div class="container mx-auto ">
+        <div class="container mx-auto max-w-[1100px] ">
             <!-- top story -->
             <div class="w-[70%] mt-6">
                 <div class="flex">
@@ -3219,7 +3176,7 @@
 
         
         <!-- footer -->
-        <div class="container mx-auto">
+        <div class="container mx-auto max-w-[1100px]">
             <div class="border-t border-t-4 flex   pt-5 mt-10 p-4  border-b pb-5 mb-3">
                 <ul class="w-[170px] mr-5">
                     <li class="mb-2" > <a class="hover:border-b border-black text-lg text-black font-bold " href="#">
